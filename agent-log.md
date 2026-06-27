@@ -1,4 +1,4 @@
-﻿# Agent Activity Log — PulseDesk · Forge 2 Edition 1
+# Agent Activity Log — PulseDesk · Forge 2 Edition 1
 
 Real chronological log of the human → Hermes → OpenClaw orchestration loop.
 Not a template — every entry below is an actual event.
@@ -106,3 +106,55 @@ All 3 issues complete:
 - **All agent comms in Slack** — zero private/silent work
 - **EastRouter model routing:** Hermes uses z-ai/glm-5.1 for orchestration; OpenClaw uses moonshotai/kimi-k2.7-code for implementation; z-ai/glm-4.5-air for cheap iterative edits
 - **OpenClaw reports to #agent-log** after each task: What I Did / What Is Left / What Needs Your Call
+
+---
+
+## 2026-06-27 · Sprint 5 (Frontend + Validation + Tests) — COMPLETE
+
+### [16:30 IST] Sprint 5 Kickoff
+- **Human → Hermes (#sprint-main):** Start Sprint 5 — form validation, demo seeder, React frontend.
+- **Hermes → OpenClaw (#agent-coder):** Assigned S05-01 (validation), S05-02 (seeder), S05-03 (React frontend) on `feature/sprint-5-frontend`.
+
+### [17:00 IST] S05-01 — Form Request Validation
+- **OpenClaw:** Created `StoreTicketRequest`, `UpdateTicketRequest`, `StoreCommentRequest` with structured JSON error responses.
+- **Commit:** `feat(validation): add form request classes for tickets and comments`
+
+### [17:10 IST] S05-02 — Demo Seeder
+- **OpenClaw:** Created `DemoSeeder` — 1 org, 1 admin, 2 agents, 2 customers, 12 tickets, 3 comments.
+- **Commit:** `feat(seed): add DemoSeeder with realistic demo data`
+
+### [17:20 IST] S05-03 — React Frontend
+- **OpenClaw:** Scaffolded Login, Register, Tickets list, TicketDetail pages with auth guard. `apiFetch()` centralizes Bearer token injection.
+- **Commit:** `feat(frontend): scaffold React auth, ticket list, ticket detail pages`
+- **OpenClaw → #human-review:** PR opened for `feature/sprint-5-frontend`
+- **Human:** Approved and merged ✅
+
+---
+
+## 2026-06-27 · Sprint 6 (SLA Policies + Dashboard + Docs) — COMPLETE
+
+### [17:46 IST] Sprint 6 Kickoff
+- **Human → Hermes (#sprint-main):** Start Sprint 6 — SLA policies CRUD, dashboard metrics, documentation finalization.
+- **Hermes:** Recon of codebase. Confirmed `sla_policies` migration and `SlaPolicy` model already on main. Scoped issues accordingly.
+- **Hermes → OpenClaw (#agent-coder):** Assigned 3 issues on `feature/sprint-6-final-polish`.
+
+### [18:00 IST] S06-01 — SLA Policy CRUD
+- **OpenClaw:** Created `SlaPolicyController` with full CRUD, org-scoped, unique priority-per-org validation.
+- Registered `Route::apiResource('sla-policies')` under Sanctum auth group.
+- **Commit included in:** `feat(sprint-6): implement SLA Policy CRUD, Dashboard stats...`
+
+### [18:05 IST] S06-02 — Dashboard Stats Endpoint
+- **OpenClaw:** Created `DashboardController` with `/api/stats` — ticket counts by status/priority, SLA breach rate, average resolution time (Carbon-based, SQLite-safe).
+- Added stats widget cards to `Tickets.jsx` frontend.
+- **Frontend build:** `npm run build` ✅ (Vite output dist/assets/index-*.js)
+
+### [18:10 IST] S06-03 — Polish & Docs
+- **OpenClaw:** Updated `ARCHITECTURE.md` with actual schema (sla_policies, activity_logs, correct column names). Updated `SUBMISSION.md` with repo URL and commit SHAs.
+- Created `SlaAndStatsTest.php` — 11 tests all passing ✅
+
+### [18:12 IST] Sprint 6 PR & Merge
+- **OpenClaw → #human-review:** PR `feature/sprint-6-final-polish → main` opened.
+- **Human:** Reviewed, approved, and squash-merged ✅
+
+**Final test run on main:** 11/11 tests pass. `migrate:fresh --seed` completes cleanly.
+
