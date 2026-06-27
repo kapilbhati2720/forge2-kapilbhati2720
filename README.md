@@ -48,6 +48,7 @@ php artisan key:generate
 php artisan migrate:fresh --seed
 php artisan serve
 # API running at http://localhost:8000
+# Demo credentials (after seed): admin@acme.test / password
 ```
 
 ### Frontend
