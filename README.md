@@ -6,7 +6,7 @@
 
 | Layer | Technology |
 |-------|-----------|
-| Backend | PHP 8.2+ · Laravel 11 · REST API · Laravel Sanctum |
+| Backend | PHP 8.3+ · Laravel 11 · REST API · Laravel Sanctum |
 | Database | MySQL 8 · Migrations + Seeders |
 | Frontend | React 19 · Vite · Tailwind CSS v3 |
 | Auth | Sanctum token auth (register / login) |
@@ -35,7 +35,7 @@
 ## Exact Run Steps (fresh clone)
 
 ### Prerequisites
-- PHP 8.2+, Composer, Node 20+, MySQL 8
+- PHP 8.3+, Composer, Node 20+, MySQL 8
 
 ### Backend
 
@@ -45,7 +45,7 @@ composer install
 cp .env.example .env
 # Edit .env: set DB_HOST, DB_DATABASE, DB_USERNAME, DB_PASSWORD
 php artisan key:generate
-php artisan migrate --seed
+php artisan migrate:fresh --seed
 php artisan serve
 # API running at http://localhost:8000
 ```
@@ -85,10 +85,10 @@ Use `withoutTenantScope()` as the admin escape hatch.
 - Threaded comments — public replies + internal notes (is_internal flag)
 - OrganizationScope global scope on all models
 
-**SHOULD tier (in progress):**
-- SLA policies per priority (response + resolution targets)
-- Activity log per ticket (status changes, assignments, comments)
-- Dashboard metrics
+**SHOULD tier (complete):**
+- ✅ SLA policies per priority (response + resolution targets) — `/api/sla-policies` CRUD
+- ✅ Activity log per ticket (status changes, assignments, comments)
+- ✅ Dashboard metrics — `/api/stats` (ticket counts, SLA breach rate, avg resolution time)
 
 ## Known Limitations
 

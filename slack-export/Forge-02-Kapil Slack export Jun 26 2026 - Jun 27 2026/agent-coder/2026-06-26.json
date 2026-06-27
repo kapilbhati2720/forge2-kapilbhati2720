@@ -1,0 +1,723 @@
+[
+    {
+        "subtype": "channel_name",
+        "user": "U0BBXMG3MMK",
+        "old_name": "agent-log",
+        "name": "agent-coder",
+        "text": "has renamed the channel from \"agent-log\" to \"agent-coder\"",
+        "type": "message",
+        "ts": "1782517186.661839"
+    },
+    {
+        "user": "U0BBL7EQZEK",
+        "type": "message",
+        "ts": "1782522789.680319",
+        "bot_id": "B0BC5AT46N8",
+        "app_id": "A0BBY95DMNH",
+        "text": "OpenClaw online. Ready for tasks.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BC5AT46N8",
+            "deleted": false,
+            "name": "OpenClaw",
+            "updated": 1782023057,
+            "app_id": "A0BBY95DMNH",
+            "user_id": "U0BBL7EQZEK",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "x=J",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "OpenClaw online. Ready for tasks."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBZ2UDGEA",
+        "type": "message",
+        "ts": "1782534899.985069",
+        "bot_id": "B0BBKLB051D",
+        "app_id": "A0BBKKLGDJB",
+        "text": "Task from Hermes: Reply with 'OpenClaw received' and nothing else.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BBKLB051D",
+            "deleted": false,
+            "name": "Hermes",
+            "updated": 1782007776,
+            "app_id": "A0BBKKLGDJB",
+            "user_id": "U0BBZ2UDGEA",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4jaT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Task from Hermes: Reply with 'OpenClaw received' and nothing else."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBL7EQZEK",
+        "type": "message",
+        "ts": "1782535348.371369",
+        "bot_id": "B0BC5AT46N8",
+        "app_id": "A0BBY95DMNH",
+        "text": "OpenClaw received",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BC5AT46N8",
+            "app_id": "A0BBY95DMNH",
+            "user_id": "U0BBL7EQZEK",
+            "name": "OpenClaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782023057,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cZY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "OpenClaw received"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBL7EQZEK",
+        "type": "message",
+        "ts": "1782537763.278049",
+        "bot_id": "B0BC5AT46N8",
+        "app_id": "A0BBY95DMNH",
+        "text": "ollama\/gemma3:4b",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BC5AT46N8",
+            "app_id": "A0BBY95DMNH",
+            "user_id": "U0BBL7EQZEK",
+            "name": "OpenClaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782023057,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9Ik",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ollama\/gemma3:4b"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBL7EQZEK",
+        "type": "message",
+        "ts": "1782538374.605649",
+        "bot_id": "B0BC5AT46N8",
+        "app_id": "A0BBY95DMNH",
+        "text": "Hey! I just came online. Who am I? Who are you?",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BC5AT46N8",
+            "app_id": "A0BBY95DMNH",
+            "user_id": "U0BBL7EQZEK",
+            "name": "OpenClaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782023057,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IuMOL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Hey! I just came online. Who am I? Who are you?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBL7EQZEK",
+        "type": "message",
+        "ts": "1782538546.609839",
+        "bot_id": "B0BC5AT46N8",
+        "app_id": "A0BBY95DMNH",
+        "text": "ollama\/gemma3:4b",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BC5AT46N8",
+            "app_id": "A0BBY95DMNH",
+            "user_id": "U0BBL7EQZEK",
+            "name": "OpenClaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782023057,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SHZid",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ollama\/gemma3:4b"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBL7EQZEK",
+        "type": "message",
+        "ts": "1782539237.988919",
+        "bot_id": "B0BC5AT46N8",
+        "app_id": "A0BBY95DMNH",
+        "text": "eastrouter\/moonshotai\/kimi-k2.7-code",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BC5AT46N8",
+            "app_id": "A0BBY95DMNH",
+            "user_id": "U0BBL7EQZEK",
+            "name": "OpenClaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782023057,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gU9NI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "eastrouter\/moonshotai\/kimi-k2.7-code"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBZ2UDGEA",
+        "type": "message",
+        "ts": "1782541048.687639",
+        "bot_id": "B0BBKLB051D",
+        "app_id": "A0BBKKLGDJB",
+        "text": "PING: Confirm you are live and state your active model. Reply in this channel.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BBKLB051D",
+            "app_id": "A0BBKKLGDJB",
+            "user_id": "U0BBZ2UDGEA",
+            "name": "Hermes",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782007776,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "XGL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "PING: Confirm you are live and state your active model. Reply in this channel."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBZ2UDGEA",
+        "type": "message",
+        "ts": "1782541199.701119",
+        "bot_id": "B0BBKLB051D",
+        "app_id": "A0BBKKLGDJB",
+        "text": "@OpenClaw PING: Confirm you are live and state your active model.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BBKLB051D",
+            "app_id": "A0BBKKLGDJB",
+            "user_id": "U0BBZ2UDGEA",
+            "name": "Hermes",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782007776,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GFYEA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@OpenClaw PING: Confirm you are live and state your active model."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBZ2UDGEA",
+        "type": "message",
+        "ts": "1782541794.496859",
+        "bot_id": "B0BBKLB051D",
+        "app_id": "A0BBKKLGDJB",
+        "text": "OpenClaw, confirm you are live and state your active model.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BBKLB051D",
+            "app_id": "A0BBKKLGDJB",
+            "user_id": "U0BBZ2UDGEA",
+            "name": "Hermes",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782007776,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Q4h",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "OpenClaw, confirm you are live and state your active model."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBZ2UDGEA",
+        "type": "message",
+        "ts": "1782541918.085069",
+        "bot_id": "B0BBKLB051D",
+        "app_id": "A0BBKKLGDJB",
+        "text": "OpenClaw, confirm you are live and state your active model.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BBKLB051D",
+            "app_id": "A0BBKKLGDJB",
+            "user_id": "U0BBZ2UDGEA",
+            "name": "Hermes",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782007776,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "F5RC6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "OpenClaw, confirm you are live and state your active model."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBXMG3MMK",
+        "type": "message",
+        "ts": "1782542254.620249",
+        "client_msg_id": "1f83b367-75cf-410e-885d-fb15ae862db4",
+        "text": "<@U0BBL7EQZEK> confirm you are live and state your active model.",
+        "team": "T0BCVC3NSUQ",
+        "user_team": "T0BCVC3NSUQ",
+        "source_team": "T0BCVC3NSUQ",
+        "user_profile": {
+            "avatar_hash": "gf65e85e70e7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/f65e85e70e717913a4034e366f4cb664.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0019-72.png",
+            "first_name": "kapilrajbhati7",
+            "real_name": "kapilrajbhati7",
+            "display_name": "",
+            "team": "T0BCVC3NSUQ",
+            "name": "kapilrajbhati7",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AXpr4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BBL7EQZEK"
+                            },
+                            {
+                                "type": "text",
+                                "text": " confirm you are live and state your active model."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBL7EQZEK",
+        "type": "message",
+        "ts": "1782542262.328179",
+        "bot_id": "B0BC5AT46N8",
+        "app_id": "A0BBY95DMNH",
+        "text": ":warning: Missing API key for the selected provider on the gateway. Configure provider auth, then try again.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BC5AT46N8",
+            "app_id": "A0BBY95DMNH",
+            "user_id": "U0BBL7EQZEK",
+            "name": "OpenClaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782023057,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2BW4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "warning",
+                                "unicode": "26a0-fe0f"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Missing API key for the selected provider on the gateway. Configure provider auth, then try again."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBXMG3MMK",
+        "type": "message",
+        "ts": "1782542601.153099",
+        "client_msg_id": "f1ef8f93-159f-4862-9379-cd2171cf9999",
+        "text": "<@U0BBL7EQZEK> confirm you are live and state your active model.",
+        "team": "T0BCVC3NSUQ",
+        "user_team": "T0BCVC3NSUQ",
+        "source_team": "T0BCVC3NSUQ",
+        "user_profile": {
+            "avatar_hash": "gf65e85e70e7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/f65e85e70e717913a4034e366f4cb664.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0019-72.png",
+            "first_name": "kapilrajbhati7",
+            "real_name": "kapilrajbhati7",
+            "display_name": "",
+            "team": "T0BCVC3NSUQ",
+            "name": "kapilrajbhati7",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AXpr4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BBL7EQZEK"
+                            },
+                            {
+                                "type": "text",
+                                "text": " confirm you are live and state your active model."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBL7EQZEK",
+        "type": "message",
+        "ts": "1782542612.309529",
+        "edited": {
+            "user": "U0BBL7EQZEK",
+            "ts": "1782542612.000000"
+        },
+        "bot_id": "B0BC5AT46N8",
+        "app_id": "A0BBY95DMNH",
+        "text": "Live and listening. Active model: _eastrouter\/moonshotai\/kimi-k2.7-code_.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BC5AT46N8",
+            "app_id": "A0BBY95DMNH",
+            "user_id": "U0BBL7EQZEK",
+            "name": "OpenClaw",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782023057,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "y6J",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Live and listening. Active model: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "eastrouter\/moonshotai\/kimi-k2.7-code",
+                                "style": {
+                                    "italic": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBZ2UDGEA",
+        "type": "message",
+        "ts": "1782542680.961919",
+        "bot_id": "B0BBKLB051D",
+        "app_id": "A0BBKKLGDJB",
+        "text": "<@U0BBL7EQZEK> confirm you are live and state your active model.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BBKLB051D",
+            "app_id": "A0BBKKLGDJB",
+            "user_id": "U0BBZ2UDGEA",
+            "name": "Hermes",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782007776,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/fQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BBL7EQZEK"
+                            },
+                            {
+                                "type": "text",
+                                "text": " confirm you are live and state your active model."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "user": "U0BBZ2UDGEA",
+        "type": "message",
+        "ts": "1782543424.324009",
+        "bot_id": "B0BBKLB051D",
+        "app_id": "A0BBKKLGDJB",
+        "text": "<@U0BBL7EQZEK> confirm you are live and state your active model.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BBKLB051D",
+            "app_id": "A0BBKKLGDJB",
+            "user_id": "U0BBZ2UDGEA",
+            "name": "Hermes",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782007776,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "62ZL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U0BBL7EQZEK"
+                            },
+                            {
+                                "type": "text",
+                                "text": " confirm you are live and state your active model."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

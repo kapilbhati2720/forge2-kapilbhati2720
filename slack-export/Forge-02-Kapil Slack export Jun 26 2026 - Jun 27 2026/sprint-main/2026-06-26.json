@@ -1,0 +1,42 @@
+[
+    {
+        "user": "U0BBZ2UDGEA",
+        "type": "message",
+        "ts": "1782522305.207589",
+        "bot_id": "B0BBKLB051D",
+        "app_id": "A0BBKKLGDJB",
+        "text": "Hermes online. Smoke test.",
+        "team": "T0BCVC3NSUQ",
+        "bot_profile": {
+            "id": "B0BBKLB051D",
+            "app_id": "A0BBKKLGDJB",
+            "user_id": "U0BBZ2UDGEA",
+            "name": "Hermes",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"
+            },
+            "deleted": false,
+            "updated": 1782007776,
+            "team_id": "T0BCVC3NSUQ"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "u+J=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Hermes online. Smoke test."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

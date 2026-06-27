@@ -1,0 +1,115 @@
+[
+{
+    "id": "C0BCVCVEAFJ",
+    "name": "agent-coder",
+    "created": 1782007430,
+    "creator": "U0BBXMG3MMK",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BBL7EQZEK",
+        "U0BBXMG3MMK",
+        "U0BBZ2UDGEA"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BCVCWKZME",
+    "name": "sprint-main",
+    "created": 1782007453,
+    "creator": "U0BBXMG3MMK",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BBL7EQZEK",
+        "U0BBXMG3MMK",
+        "U0BBZ2UDGEA"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BDGNG6T46",
+    "name": "ci-cd",
+    "created": 1782517265,
+    "creator": "U0BBXMG3MMK",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BBXMG3MMK"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BBUPKSJAF",
+    "name": "agent-log",
+    "created": 1782007470,
+    "creator": "U0BBXMG3MMK",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BBL7EQZEK",
+        "U0BBXMG3MMK",
+        "U0BBZ2UDGEA"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+},
+{
+    "id": "C0BBUPM0PR9",
+    "name": "human-review",
+    "created": 1782007496,
+    "creator": "U0BBXMG3MMK",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U0BBL7EQZEK",
+        "U0BBXMG3MMK",
+        "U0BBZ2UDGEA"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    }
+}
+]
