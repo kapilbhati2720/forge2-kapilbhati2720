@@ -55,6 +55,39 @@ Not a template — every entry below is an actual event.
 
 ---
 
+## 2026-06-27 · Sprint 3 (Ticket & Comment API) — COMPLETE
+
+### [15:31 IST] Sprint 3 Kickoff
+- **Human → Hermes (#sprint-main):** Confirm Sprint 3 backlog; assign next issue to OpenClaw.
+- **Hermes:** Created `sprints/sprint-03.md`. Confirmed backlog state:
+  - S03-01 Ticket CRUD — DONE (commit `8a0fa5a`, TicketController + routes live)
+  - S03-02 Comment API — NEXT
+  - S03-03 Activity log — PENDING
+- **Hermes → OpenClaw (#agent-coder):** Assigned S03-02 — CommentController::store() + route, on branch `feat/sprint-3-comment-activity`, commit `feat(comments): add comment creation endpoint`.
+
+### [15:55 IST] S03-02 — Comment API
+- **OpenClaw:** Created `CommentController::store()` with `body` + `is_internal` validation, org-scoped via ticket's `organization_id`, `author_id` = auth()->id(). Route `POST /api/tickets/{ticket}/comments` added under sanctum.
+- **Commit:** `b2d2f59` feat(comments): add comment creation endpoint
+- **Verification:** `php artisan route:list` resolves the comments endpoint ✅
+
+### [15:55 IST] S03-03 — Activity Log
+- **OpenClaw:** Added `ActivityLog` tracking in `TicketController::update()`. Captures `getOriginal()` before update, writes one `ActivityLog` per changed field (`status`, `priority`, `assignee_id`) with `meta {from,to}`.
+- **Commit:** `9ad5658` feat(activity): log ticket changes to activity_log
+- **Verification:** All routes resolve, no bootstrap errors, `ActivityLog` and `Comment` models have correct `$fillable` and casts ✅
+
+### Sprint 3 Outcome
+All 3 issues complete:
+- `GET /api/tickets` — list with filters, org-scoped, paginated
+- `POST /api/tickets` — create ticket
+- `GET /api/tickets/{ticket}` — show with comments + activity logs
+- `PUT /api/tickets/{ticket}` — update with automatic activity logging
+- `POST /api/tickets/{ticket}/comments` — create comment (public or internal)
+- All under `auth:sanctum`, all org-scoped via `OrganizationScope`
+
+**Status:** ✅ Sprint 3 code complete. Awaiting human review/merge before Sprint 4.
+
+---
+
 ## Process Notes
 
 - **Human gates all merges** — agents commit to feature branches, human reviews and merges to main
