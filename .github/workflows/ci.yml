@@ -1,0 +1,46 @@
+name: PulseDesk CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  backend-test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        extensions: mbstring, xml, ctype, iconv, mysql, sqlite
+        coverage: xdebug
+
+    - name: Install Dependencies
+      run: |
+        cd backend
+        composer install --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+    - name: Run Tests
+      run: |
+        cd backend
+        php artisan test
+
+  frontend-lint-build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Install Dependencies & Build
+      run: |
+        cd frontend
+        npm ci
+        npm run build
