@@ -27,6 +27,14 @@ function Tickets() {
   const [priority, setPriority] = useState('')
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
+  const [stats, setStats] = useState(null)
+
+  useEffect(() => {
+    // Fetch stats
+    apiFetch('/api/stats')
+      .then((data) => setStats(data.data))
+      .catch((err) => console.error('Failed to load stats', err))
+  }, [])
 
   useEffect(() => {
     const params = new URLSearchParams()
@@ -51,9 +59,16 @@ function Tickets() {
     navigate('/login')
   }
 
+  // Calculate total active
+  const openCount = stats?.counts_by_status?.open || 0;
+  const pendingCount = stats?.counts_by_status?.pending || 0;
+  const onHoldCount = stats?.counts_by_status?.on_hold || 0;
+  const activeCount = openCount + pendingCount + onHoldCount;
+
   return (
     <div className="min-h-screen bg-gray-50 p-6">
       <div className="mx-auto max-w-6xl">
+        {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <h1 className="text-2xl font-semibold text-gray-900">Tickets</h1>
           <button
@@ -63,6 +78,31 @@ function Tickets() {
             Log out
           </button>
         </div>
+
+        {/* Stats Dashboard Cards */}
+        {stats && (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100 flex flex-col justify-between">
+              <span className="text-sm font-medium text-gray-500">Active Tickets</span>
+              <span className="text-3xl font-bold text-gray-950 mt-2">{activeCount}</span>
+              <span className="text-xs text-gray-400 mt-1">Open, pending & on hold</span>
+            </div>
+            <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100 flex flex-col justify-between">
+              <span className="text-sm font-medium text-gray-500">SLA Breach Rate</span>
+              <span className={`text-3xl font-bold mt-2 ${stats.sla?.breach_rate_percent > 20 ? 'text-red-600' : 'text-green-600'}`}>
+                {stats.sla?.breach_rate_percent}%
+              </span>
+              <span className="text-xs text-gray-400 mt-1">
+                {stats.sla?.breached_count} breached out of {stats.sla?.total_evaluated} evaluated
+              </span>
+            </div>
+            <div className="bg-white p-5 rounded-lg shadow-sm border border-gray-100 flex flex-col justify-between">
+              <span className="text-sm font-medium text-gray-500">Average Resolution Time</span>
+              <span className="text-3xl font-bold text-gray-950 mt-2">{stats.average_resolution_minutes} min</span>
+              <span className="text-xs text-gray-400 mt-1">For all resolved tickets</span>
+            </div>
+          </div>
+        )}
 
         <div className="flex gap-4 mb-6">
           <div>
