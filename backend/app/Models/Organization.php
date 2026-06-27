@@ -5,22 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Database\Eloquent\Builder;
-use App\Scopes\OrganizationScope;
 
 class Organization extends Model
 {
     use HasFactory, SoftDeletes;
-
-    protected static function booted(): void
-    {
-        static::addGlobalScope(new OrganizationScope);
-    }
-
-    public static function withoutTenantScope(): Builder
-    {
-        return static::withoutGlobalScope(OrganizationScope::class);
-    }
 
     protected $fillable = [
         'name',
