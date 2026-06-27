@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Ticket;
+use App\Models\ActivityLog;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
@@ -62,7 +63,33 @@ class TicketController extends Controller
             'assignee_id' => ['sometimes', 'nullable', 'exists:users,id'],
         ]);
 
+        // Track status/priority/assignee changes for activity logging
+        $trackable = ['status', 'priority', 'assignee_id'];
+        $changes = [];
+
+        foreach ($trackable as $field) {
+            if (array_key_exists($field, $validated)) {
+                $newValue = $validated[$field];
+                $oldValue = $ticket->getOriginal($field);
+
+                if ($newValue != $oldValue) {
+                    $changes[$field] = ['from' => $oldValue, 'to' => $newValue];
+                }
+            }
+        }
+
         $ticket->update($validated);
+
+        // Write an activity log entry for every tracked change
+        foreach ($changes as $field => $change) {
+            ActivityLog::create([
+                'organization_id' => $ticket->organization_id,
+                'ticket_id' => $ticket->id,
+                'actor_id' => auth()->id(),
+                'action' => $field . '_changed',
+                'meta' => $change,
+            ]);
+        }
 
         return $ticket->load(['requester', 'assignee']);
     }
