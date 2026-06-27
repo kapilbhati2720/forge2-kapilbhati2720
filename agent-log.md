@@ -84,7 +84,19 @@ All 3 issues complete:
 - `POST /api/tickets/{ticket}/comments` — create comment (public or internal)
 - All under `auth:sanctum`, all org-scoped via `OrganizationScope`
 
-**Status:** ✅ Sprint 3 code complete. Awaiting human review/merge before Sprint 4.
+**Status:** ✅ Sprint 3 merged to `main` and in sync with `origin/main`.
+
+### [15:57 IST] Sprint 3 Branch Cleanup
+- **Issue:** Stale branch `feat/s03-02-comment-api` from earlier session contained hardcoded secrets in agent config files.
+- **Action:** Branch deleted. `main` verified clean — uses `${ENV_VAR}` placeholders in `agents/hermes/hermes-config.yaml` and `agents/openclaw/openclaw.json`.
+- **Blocker:** Credentials leaked in the deleted branch's git history must be rotated (EastRouter, OpenClaw gateway, Slack bot/app tokens, Groq, Ollama).
+
+### [15:57 IST] Sprint 4 Kickoff
+- **Hermes → OpenClaw (#agent-coder, C0BCVCVEAFJ):** Re-assigned corrected Sprint 4 work on branch `feat/sprint-4-validation-seed-tests`:
+  - S04-01: Form request validation (StoreTicketRequest, UpdateTicketRequest, StoreCommentRequest)
+  - S04-02: Demo seeder (1 org, 5 users, 12 tickets, 3 comments)
+  - S04-03: Pest feature tests (org isolation, cross-tenant probe)
+- **Status:** OpenClaw working. Reports expected in #agent-log after each issue.
 
 ---
 
