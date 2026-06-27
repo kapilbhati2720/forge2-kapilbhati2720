@@ -71,6 +71,7 @@ class DemoSeeder extends Seeder
         $ticketOne = $tickets->first();
 
         Comment::create([
+            'organization_id' => $ticketOne->organization_id,
             'ticket_id' => $ticketOne->id,
             'author_id' => $agents->first()->id,
             'body' => 'Initial public reply on ticket one.',
@@ -79,6 +80,7 @@ class DemoSeeder extends Seeder
         ]);
 
         Comment::create([
+            'organization_id' => $ticketOne->organization_id,
             'ticket_id' => $ticketOne->id,
             'author_id' => $agents->last()->id,
             'body' => 'Internal note for agents only.',
@@ -87,6 +89,7 @@ class DemoSeeder extends Seeder
         ]);
 
         Comment::create([
+            'organization_id' => $ticketOne->organization_id,
             'ticket_id' => $ticketOne->id,
             'author_id' => $customers->first()->id,
             'body' => 'Follow-up from the customer.',
