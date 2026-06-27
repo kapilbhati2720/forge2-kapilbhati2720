@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreCommentRequest;
 use App\Models\Comment;
 use App\Models\Ticket;
-use Illuminate\Http\Request;
 
 class CommentController extends Controller
 {
@@ -14,12 +14,9 @@ class CommentController extends Controller
      *
      * POST /api/tickets/{ticket}/comments
      */
-    public function store(Request $request, Ticket $ticket)
+    public function store(StoreCommentRequest $request, Ticket $ticket)
     {
-        $validated = $request->validate([
-            'body' => ['required', 'string'],
-            'is_internal' => ['sometimes', 'boolean'],
-        ]);
+        $validated = $request->validated();
 
         $comment = Comment::create([
             'organization_id' => $ticket->organization_id,
