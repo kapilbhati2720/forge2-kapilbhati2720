@@ -7,6 +7,7 @@ use App\Http\Requests\StoreTicketRequest;
 use App\Http\Requests\UpdateTicketRequest;
 use App\Models\Ticket;
 use App\Models\ActivityLog;
+use Illuminate\Http\Request;
 
 class TicketController extends Controller
 {
@@ -22,7 +23,9 @@ class TicketController extends Controller
             $query->where('priority', $request->priority);
         }
 
-        return $query->with(['requester', 'assignee'])->paginate(20);
+        return response()->json([
+            'data' => $query->with(['requester', 'assignee'])->paginate(20)->items(),
+        ]);
     }
 
     public function store(StoreTicketRequest $request)
@@ -39,12 +42,16 @@ class TicketController extends Controller
             'assignee_id' => $validated['assignee_id'] ?? null,
         ]);
 
-        return response()->json($ticket->load(['requester', 'assignee']), 201);
+        return response()->json([
+            'data' => $ticket->load(['requester', 'assignee']),
+        ], 201);
     }
 
     public function show(Ticket $ticket)
     {
-        return $ticket->load(['requester', 'assignee', 'comments', 'activityLogs']);
+        return response()->json([
+            'data' => $ticket->load(['requester', 'assignee']),
+        ]);
     }
 
     public function update(UpdateTicketRequest $request, Ticket $ticket)
@@ -79,6 +86,8 @@ class TicketController extends Controller
             ]);
         }
 
-        return $ticket->load(['requester', 'assignee']);
+        return response()->json([
+            'data' => $ticket->load(['requester', 'assignee']),
+        ]);
     }
 }

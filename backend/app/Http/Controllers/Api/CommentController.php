@@ -26,6 +26,8 @@ class CommentController extends Controller
             'is_internal' => $validated['is_internal'] ?? false,
         ]);
 
-        return response()->json($comment->load('author'), 201);
+        return response()->json([
+            'data' => $comment->load('author'),
+        ], 201);
     }
 }
